@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:ctx="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+		<!-- instructions to spring container -->
+		<!--<bean id="service" class="com.cg.service.OrderServiceImpl" autowire="byType">
+			 wring - connecting  beans together , wiring is usually done in xml, java class
+				<property name="orderRepo" ref="repo"></property>
+		</bean>-->
+		<bean id="service" class="com.cg.service.OrderServiceImpl">
+		</bean>
+		<bean id="repo" class="com.cg.repo.OrderRepImpl"> 
+		</bean>
+		<ctx:annotation-config></ctx:annotation-config>
+</beans>	
