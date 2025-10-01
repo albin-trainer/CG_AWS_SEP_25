@@ -1,0 +1,17 @@
+	upload spring boot jpa project source code in S3 bucket
+	copy from bucket to EC2
+	edit the application.properties to change the db url endpoint, uname and pwd
+	package the app as jar
+	run the  jar
+
+ --------------------
+    after uploading in bucket
+    --> copy 
+     --> create a folder called myapp
+    aws s3 cp s3://<<url> ./myapp --recursive
+
+-------------------------
+	edit the application.properties to change the url, uname and pwd
+		 --create jar file
+ 		--run the jar file
+ 		--ENJOY !!!!

@@ -1,0 +1,3 @@
+FROM openjdk:17-jdk-slim
+COPY ./myapp.jar  ./myapp.jar
+CMD ["java","-jar","myapp.jar"]

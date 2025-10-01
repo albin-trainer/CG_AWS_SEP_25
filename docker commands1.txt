@@ -1,0 +1,20 @@
+docker pull <imgname>
+docker images  - list all iamges
+docker rmi <imgname> - remove a image
+to run a image
+  docker run <imgname>
+for mysql img
+	docker run -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root mysql
+
+docker run -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root  -d mysql
+    //here -d to run mysql in background (detached mode)
+----------------------------------------------
+docker build -t <imgname> .
+
+docker ps -a 
+   -display all the process including stopped process
+docker stop <<containerid>
+docker start <<containerid>>
+ to open interactive mode
+docker exec -it <<containerid>> sh
+----------------------------------------------------

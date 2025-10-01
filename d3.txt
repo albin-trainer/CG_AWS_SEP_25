@@ -1,0 +1,11 @@
+	Deploy simple SpringBoot Rest Api in Docker Database not required
+ 		 -In local system generate jar file
+  		- upload in S3
+  		-Copy jar from S3
+  		- create Dockerfile
+ 		-create image
+             	        -base image (jdk17)
+              		-copy jar
+              		 -run jar
+
+	
